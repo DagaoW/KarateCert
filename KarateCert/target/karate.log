@@ -1,0 +1,842 @@
+13:02:37.927 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.0.1
+13:02:38.259 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:02:39.819 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+13:02:39.879 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:02:41.530 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:02:41.841 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 299
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-tueQ/48J2M00dreOZDpEkSQxnUo"
+1 < Date: Fri, 09 Jul 2021 11:02:41 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjEsImV4cCI6MTYyNjAwMTM2MX0.YIWHTNI47QfH9NmOcON7EgfrVioBFgHjJUqWEb1rsuQ"}
+13:02:41.873 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:02:41.896 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] accessories 
+13:02:41.899 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:42.131 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 227
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:02:42 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:02:42.221 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:02:42.228 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: cartCreator accessoriesList
+13:02:42.238 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:02:42.241 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:02:42.254 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:02:42.520 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 263
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-1Uxrt5Bi6j1tKVT7DUIS2JPlyow"
+1 < Date: Fri, 09 Jul 2021 11:02:42 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjIsImV4cCI6MTYyNjAwMTM2Mn0.DMOEy0vkW4eHwnwI2XO3OaXSEC767A5wd-l_JIcBbY8"}
+13:02:42.528 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:02:42.531 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:02:42.536 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjIsImV4cCI6MTYyNjAwMTM2Mn0.DMOEy0vkW4eHwnwI2XO3OaXSEC767A5wd-l_JIcBbY8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"id":"12"}
+
+13:02:42.764 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:02:42 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:02:42.779 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:02:42.781 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:02:42.791 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:02:43.061 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 265
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-FIYIsInIbVrH6uPhruSSuKg6B9U"
+1 < Date: Fri, 09 Jul 2021 11:02:43 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjMsImV4cCI6MTYyNjAwMTM2M30.0fpjCGb_qj8suvnMDfppDefIW2KBNNdj4aIS0u5kg3Q"}
+13:02:43.076 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:02:43.080 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:02:43.088 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjMsImV4cCI6MTYyNjAwMTM2M30.0fpjCGb_qj8suvnMDfppDefIW2KBNNdj4aIS0u5kg3Q
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"id":"13"}
+
+13:02:43.334 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 238
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:02:43 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:02:43.345 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:02:43.348 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:02:43.357 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:02:43.617 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 256
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-FIYIsInIbVrH6uPhruSSuKg6B9U"
+1 < Date: Fri, 09 Jul 2021 11:02:43 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjMsImV4cCI6MTYyNjAwMTM2M30.0fpjCGb_qj8suvnMDfppDefIW2KBNNdj4aIS0u5kg3Q"}
+13:02:43.636 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:02:43.638 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:02:43.647 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjMsImV4cCI6MTYyNjAwMTM2M30.0fpjCGb_qj8suvnMDfppDefIW2KBNNdj4aIS0u5kg3Q
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"id":"14"}
+
+13:02:43.930 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 275
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:02:43 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:02:43.941 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:02:43.945 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:02:43.954 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:02:44.224 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 267
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-KgfVidBEGSQG9/gxgMmHAsL97vM"
+1 < Date: Fri, 09 Jul 2021 11:02:44 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjQsImV4cCI6MTYyNjAwMTM2NH0.-ASte2UzW68xp1DoLkrCr9-QbbJ4VhM0-4NeWflLGt0"}
+13:02:44.230 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:02:44.231 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:02:44.234 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjQsImV4cCI6MTYyNjAwMTM2NH0.-ASte2UzW68xp1DoLkrCr9-QbbJ4VhM0-4NeWflLGt0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+{"id":"15"}
+
+13:02:44.476 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 238
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:02:44 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:02:44.504 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: cartCreator accessoriesList
+13:02:44.511 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/carts/getCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjEsImV4cCI6MTYyNjAwMTM2MX0.YIWHTNI47QfH9NmOcON7EgfrVioBFgHjJUqWEb1rsuQ
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:44.778 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 263
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1235
+1 < Etag: W/"4d3-rFLpMtHxvffiC/IbsiPxu00OjFw"
+1 < Date: Fri, 09 Jul 2021 11:02:44 GMT
+1 < Via: 1.1 vegur
+{"cart":[{"quantity":1,"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"quantity":1,"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"quantity":1,"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"quantity":1,"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:02:44.799 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] {
+  "cart": [
+    {
+      "quantity": 1,
+      "price": "32",
+      "name": "LeadsaiL Wireless Keyboard and Mouse Combo",
+      "description": "Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)",
+      "id": "12",
+      "category": "accessories",
+      "brand": "Leadsail"
+    },
+    {
+      "quantity": 1,
+      "price": "29",
+      "name": "Amazon Basics Keyboard and Mouse Combo",
+      "description": "Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)",
+      "id": "13",
+      "category": "accessories",
+      "brand": "Amazon"
+    },
+    {
+      "quantity": 1,
+      "price": "23",
+      "name": "Cimetech Wireless Keyboard Mouse Combo",
+      "description": "Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)",
+      "id": "14",
+      "category": "accessories",
+      "brand": "Cimetech"
+    },
+    {
+      "quantity": 1,
+      "price": "26",
+      "name": "Logitech MK295 Wireless Mouse & Keyboard Combo",
+      "description": "Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite",
+      "id": "15",
+      "category": "accessories",
+      "brand": "Logitech"
+    }
+  ]
+}
+ 
+13:02:44.824 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+13:02:44.837 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] accessories 
+13:02:44.840 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:45.064 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 221
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:02:45 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:02:45.082 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:02:45.090 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/emptyCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjEsImV4cCI6MTYyNjAwMTM2MX0.YIWHTNI47QfH9NmOcON7EgfrVioBFgHjJUqWEb1rsuQ
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:45.311 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 31
+1 < Etag: W/"1f-uVjpI6rHViLny/uTsG6jJSVb1Qo"
+1 < Date: Fri, 09 Jul 2021 11:02:45 GMT
+1 < Via: 1.1 vegur
+{"message":"Cart is now empty"}
+13:02:45.319 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+13:02:45.329 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] accessories 
+13:02:45.332 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:45.566 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 231
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:02:45 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:02:45.596 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:02:45.602 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/carts/getCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjg1NjEsImV4cCI6MTYyNjAwMTM2MX0.YIWHTNI47QfH9NmOcON7EgfrVioBFgHjJUqWEb1rsuQ
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_261)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:02:45.827 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-o3MnawzYxpn9m9OqDfmxZIGYquw"
+1 < Date: Fri, 09 Jul 2021 11:02:45 GMT
+1 < Via: 1.1 vegur
+{"message":"Cart is empty"}
+13:02:47.112 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/fakeshop/getCart.feature
+13:23:22.217 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:23:23.530 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:23.663 [main] INFO  com.intuit.karate - [print] accessories 
+13:23:24.559 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:24.965 [main] DEBUG com.intuit.karate - response time in milliseconds: 391
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:23:24 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:23:25.051 [main] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:23:26.031 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:23:26.044 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:26.054 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:23:26.191 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:26.504 [main] DEBUG com.intuit.karate - response time in milliseconds: 311
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-61KfaDEak5ZA1FKBNhsjxrTQAZQ"
+1 < Date: Fri, 09 Jul 2021 11:23:26 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0"}
+13:23:26.518 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:23:26.532 [main] INFO  com.intuit.karate - [print] accessories 
+13:23:26.535 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:26.777 [main] DEBUG com.intuit.karate - response time in milliseconds: 240
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:23:26 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:23:26.795 [main] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:23:26.808 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: cartCreator accessoriesList
+13:23:26.819 [main] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:23:26.823 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:23:26.836 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:27.126 [main] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-G5ZBXTfQPBxrCj42a1fGfxnXOo0"
+1 < Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA"}
+13:23:27.130 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:23:27.132 [main] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:23:27.139 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"id":"12"}
+
+13:23:27.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 224
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:23:27.375 [main] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:23:27.377 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:23:27.388 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:27.663 [main] DEBUG com.intuit.karate - response time in milliseconds: 275
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-G5ZBXTfQPBxrCj42a1fGfxnXOo0"
+1 < Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA"}
+13:23:27.668 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:23:27.668 [main] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:23:27.671 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"id":"13"}
+
+13:23:27.892 [main] DEBUG com.intuit.karate - response time in milliseconds: 220
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:23:27.900 [main] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:23:27.902 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:23:27.912 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:28.201 [main] DEBUG com.intuit.karate - response time in milliseconds: 289
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-hGE3OaNf2dJhtJfh+s2Qnr6YO0k"
+1 < Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU"}
+13:23:28.204 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:23:28.205 [main] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:23:28.207 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"id":"14"}
+
+13:23:28.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 237
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:23:28.451 [main] DEBUG com.intuit.karate - over-writing existing variable 'signIpResponse' with new value: callonce read('logIn.feature')
+13:23:28.454 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('logIn.feature')
+13:23:28.460 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:28.750 [main] DEBUG com.intuit.karate - response time in milliseconds: 289
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-hGE3OaNf2dJhtJfh+s2Qnr6YO0k"
+1 < Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU"}
+13:23:28.753 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('logIn.feature')
+13:23:28.753 [main] DEBUG com.intuit.karate - over-writing existing variable 'accessToken' with new value: signIpResponse.token
+13:23:28.756 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/addToCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"id":"15"}
+
+13:23:29.025 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 35
+1 < Etag: W/"23-ePt5zWjLAu5+pSzcrd9zzERqTd8"
+1 < Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 < Via: 1.1 vegur
+{"message":"Product added to cart"}
+13:23:29.035 [main] INFO  com.intuit.karate - << lock released, cached callonce: cartCreator accessoriesList
+13:23:29.037 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/carts/getCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:29.275 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1235
+1 < Etag: W/"4d3-rFLpMtHxvffiC/IbsiPxu00OjFw"
+1 < Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 < Via: 1.1 vegur
+{"cart":[{"quantity":1,"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"quantity":1,"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"quantity":1,"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"quantity":1,"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:23:29.277 [main] INFO  com.intuit.karate - [print] {
+  "cart": [
+    {
+      "quantity": 1,
+      "price": "32",
+      "name": "LeadsaiL Wireless Keyboard and Mouse Combo",
+      "description": "Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)",
+      "id": "12",
+      "category": "accessories",
+      "brand": "Leadsail"
+    },
+    {
+      "quantity": 1,
+      "price": "29",
+      "name": "Amazon Basics Keyboard and Mouse Combo",
+      "description": "Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)",
+      "id": "13",
+      "category": "accessories",
+      "brand": "Amazon"
+    },
+    {
+      "quantity": 1,
+      "price": "23",
+      "name": "Cimetech Wireless Keyboard Mouse Combo",
+      "description": "Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)",
+      "id": "14",
+      "category": "accessories",
+      "brand": "Cimetech"
+    },
+    {
+      "quantity": 1,
+      "price": "26",
+      "name": "Logitech MK295 Wireless Mouse & Keyboard Combo",
+      "description": "Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite",
+      "id": "15",
+      "category": "accessories",
+      "brand": "Logitech"
+    }
+  ]
+}
+ 
+13:23:29.285 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:29.299 [main] INFO  com.intuit.karate - [print] accessories 
+13:23:29.301 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:29.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 225
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:23:29.533 [main] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:23:29.539 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/carts/emptyCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:29.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 224
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 31
+1 < Etag: W/"1f-uVjpI6rHViLny/uTsG6jJSVb1Qo"
+1 < Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 < Via: 1.1 vegur
+{"message":"Cart is now empty"}
+13:23:29.772 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:29.783 [main] INFO  com.intuit.karate - [print] accessories 
+13:23:29.785 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/products/getAllProducts
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:30.028 [main] DEBUG com.intuit.karate - response time in milliseconds: 243
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 4222
+1 < Etag: W/"107e-cW5jxKG4QpYyY6OjXflEMM+idZ4"
+1 < Date: Fri, 09 Jul 2021 11:23:30 GMT
+1 < Via: 1.1 vegur
+{"products":[{"price":"2969","name":"Apple MacBook Pro 16","description":"Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019","id":"1","category":"laptop","brand":"Apple"},{"price":"1580","name":"Dell XPS 13 (9310)","description":"Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest","id":"2","category":"laptop","brand":"Dell"},{"price":"1079","name":"Lenovo ThinkPad E15","description":"OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop","id":"3","category":"laptop","brand":"Lenovo"},{"price":"999","name":"Apple MacBook Air 13.3","description":"Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)","id":"4","category":"laptop","brand":"Apple"},{"price":"2990","name":"ASUS ZenBook Pro Duo UX581","description":"ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T","id":"5","category":"laptop","brand":"Asus"},{"price":"599","name":"ASUS VivoBook 15","description":"ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray","id":"6","category":"laptop","brand":"Asus"},{"price":"729","name":"Lenovo IdeaPad S340 15.6","description":"2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories","id":"7","category":"laptop","brand":"Lenovo"},{"price":"898","name":"Dell Inspiron 15 5502","description":"Dell Inspiron 15 5502 Thin & Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver","id":"8","category":"laptop","brand":"Dell"},{"price":"375","name":"Lenovo G34w-10 34-Inch","description":"Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black","id":"9","category":"monitor","brand":"Lenovo"},{"price":"380","name":"ASUS TUF Gaming 32 2K HDR Curved Monitor","description":"ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI","id":"10","category":"monitor","brand":"Asus"},{"price":"245","name":"Dell UltraSharp 24-inch FHD Monitor","description":"Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities","id":"11","category":"monitor","brand":"Dell"},{"price":"32","name":"LeadsaiL Wireless Keyboard and Mouse Combo","description":"Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)","id":"12","category":"accessories","brand":"Leadsail"},{"price":"29","name":"Amazon Basics Keyboard and Mouse Combo","description":"Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)","id":"13","category":"accessories","brand":"Amazon"},{"price":"23","name":"Cimetech Wireless Keyboard Mouse Combo","description":"Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)","id":"14","category":"accessories","brand":"Cimetech"},{"price":"26","name":"Logitech MK295 Wireless Mouse & Keyboard Combo","description":"Logitech MK295 Wireless Mouse & Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite","id":"15","category":"accessories","brand":"Logitech"}]}
+13:23:30.036 [main] DEBUG com.intuit.karate - write to file: target\accessories.json
+13:23:30.045 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.fakeshop-api.com/carts/getCart
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:30.271 [main] DEBUG com.intuit.karate - response time in milliseconds: 225
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-o3MnawzYxpn9m9OqDfmxZIGYquw"
+1 < Date: Fri, 09 Jul 2021 11:23:30 GMT
+1 < Via: 1.1 vegur
+{"message":"Cart is empty"}
+13:23:31.179 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:23:31.188 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:31.191 [main] DEBUG com.intuit.karate - request:
+1 > POST http://api.fakeshop-api.com/users/signin
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 52
+1 > Host: api.fakeshop-api.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Qaz12345","email":"da9marka@email.com"}
+
+13:23:31.457 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+1 < 201
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 224
+1 < Etag: W/"e0-qQNjagRkoFziwuZvOdT7O38ggqU"
+1 < Date: Fri, 09 Jul 2021 11:23:31 GMT
+1 < Via: 1.1 vegur
+{"message":"User signed in successfully","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MTEsImV4cCI6MTYyNjAwMjYxMX0.h6vULj-5nL2a7CtxhXRqZgsWJ6oyycHbby58G0j0UqY"}

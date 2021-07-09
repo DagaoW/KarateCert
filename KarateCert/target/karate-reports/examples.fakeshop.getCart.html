@@ -1,0 +1,4650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.fakeshop.getCart</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-09 01:23:30 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Get cart</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:21]"><span>[2:21]</span> <span>Delete cart</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:29]"><span>[3:29]</span> <span>Check if cart is empty</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/fakeshop/getCart.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create a cart with products</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Get cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3232</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:23:26.044 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">472</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:23:26.518 &lt;&lt; lock released, cached callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.logIn</div>
+      </div>
+      <div class="time-cell passed">434</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.4">13:23:26.054 &gt;&gt; lock acquired, begin callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.8">{
+    &quot;email&quot;:&quot;da9marka@email.com&quot;,
+    &quot;password&quot;:&quot;Qaz12345&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">422</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.16">13:23:26.191 request:
+1 &gt; POST http://api.fakeshop-api.com/users/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Qaz12345&quot;,&quot;email&quot;:&quot;da9marka@email.com&quot;}
+
+13:23:26.504 response time in milliseconds: 311
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 224
+1 &lt; Etag: W/&quot;e0-61KfaDEak5ZA1FKBNhsjxrTQAZQ&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:26 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;User signed in successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.token == token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.message == &quot;User signed in successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = call read(&#39;products.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">277</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.products</div>
+      </div>
+      <div class="time-cell passed">267</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def categoryResponse = read(&#39;category.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def category = categoryResponse.category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7">13:23:26.533 [print] accessories 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;getAllProducts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">246</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.11">13:23:26.536 request:
+1 &gt; GET http://api.fakeshop-api.com/products/getAllProducts
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:26.778 response time in milliseconds: 240
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4222
+1 &lt; Etag: W/&quot;107e-cW5jxKG4QpYyY6OjXflEMM+idZ4&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:26 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;products&quot;:[{&quot;price&quot;:&quot;2969&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;description&quot;:&quot;Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019&quot;,&quot;id&quot;:&quot;1&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;1580&quot;,&quot;name&quot;:&quot;Dell XPS 13 (9310)&quot;,&quot;description&quot;:&quot;Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest&quot;,&quot;id&quot;:&quot;2&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;1079&quot;,&quot;name&quot;:&quot;Lenovo ThinkPad E15&quot;,&quot;description&quot;:&quot;OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop&quot;,&quot;id&quot;:&quot;3&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;999&quot;,&quot;name&quot;:&quot;Apple MacBook Air 13.3&quot;,&quot;description&quot;:&quot;Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)&quot;,&quot;id&quot;:&quot;4&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;2990&quot;,&quot;name&quot;:&quot;ASUS ZenBook Pro Duo UX581&quot;,&quot;description&quot;:&quot;ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T&quot;,&quot;id&quot;:&quot;5&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;599&quot;,&quot;name&quot;:&quot;ASUS VivoBook 15&quot;,&quot;description&quot;:&quot;ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray&quot;,&quot;id&quot;:&quot;6&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;729&quot;,&quot;name&quot;:&quot;Lenovo IdeaPad S340 15.6&quot;,&quot;description&quot;:&quot;2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories&quot;,&quot;id&quot;:&quot;7&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;898&quot;,&quot;name&quot;:&quot;Dell Inspiron 15 5502&quot;,&quot;description&quot;:&quot;Dell Inspiron 15 5502 Thin &amp; Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver&quot;,&quot;id&quot;:&quot;8&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;375&quot;,&quot;name&quot;:&quot;Lenovo G34w-10 34-Inch&quot;,&quot;description&quot;:&quot;Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black&quot;,&quot;id&quot;:&quot;9&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;380&quot;,&quot;name&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor&quot;,&quot;description&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI&quot;,&quot;id&quot;:&quot;10&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;245&quot;,&quot;name&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor&quot;,&quot;description&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities&quot;,&quot;id&quot;:&quot;11&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;32&quot;,&quot;name&quot;:&quot;LeadsaiL Wireless Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)&quot;,&quot;id&quot;:&quot;12&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Leadsail&quot;},{&quot;price&quot;:&quot;29&quot;,&quot;name&quot;:&quot;Amazon Basics Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)&quot;,&quot;id&quot;:&quot;13&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Amazon&quot;},{&quot;price&quot;:&quot;23&quot;,&quot;name&quot;:&quot;Cimetech Wireless Keyboard Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)&quot;,&quot;id&quot;:&quot;14&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Cimetech&quot;},{&quot;price&quot;:&quot;26&quot;,&quot;name&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo&quot;,&quot;description&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite&quot;,&quot;id&quot;:&quot;15&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Logitech&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessories = karate.jsonPath(response, &quot;$..products[?(@.category == &#39;&quot; + category + &quot;&#39;)]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.write(accessories, &#39;accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.14">13:23:26.795 write to file: target\accessories.json
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessoriesList = read(&#39;file:target/accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartCreator = read(&#39;createCart.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce cartCreator accessoriesList</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2227</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">13:23:29.035 &lt;&lt; lock released, cached callonce: cartCreator accessoriesList
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.1.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[0]examples.fakeshop.createCart</div>
+      </div>
+      <div class="time-cell passed">544</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.4">13:23:26.808 &gt;&gt; lock acquired, begin callonce: cartCreator accessoriesList
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">312</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.5">13:23:27.130 &lt;&lt; lock released, cached callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.10.1.call">
+      <div class="step-container" id="0.10.1.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.logIn</div>
+      </div>
+      <div class="time-cell passed">294</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.5.0.call.0.4">13:23:26.820 over-writing existing variable &#39;signIpResponse&#39; with new value: callonce read(&#39;logIn.feature&#39;)
+13:23:26.823 &gt;&gt; lock acquired, begin callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10.1.call.0.5.0.call.0.8">{
+    &quot;email&quot;:&quot;da9marka@email.com&quot;,
+    &quot;password&quot;:&quot;Qaz12345&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">292</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.5.0.call.0.16">13:23:26.837 request:
+1 &gt; POST http://api.fakeshop-api.com/users/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Qaz12345&quot;,&quot;email&quot;:&quot;da9marka@email.com&quot;}
+
+13:23:27.126 response time in milliseconds: 288
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 224
+1 &lt; Etag: W/&quot;e0-G5ZBXTfQPBxrCj42a1fGfxnXOo0&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;User signed in successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.token == token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call.0.5.0.call">
+    <div class="step-container" id="0.10.1.call.0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.message == &quot;User signed in successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.6">13:23:27.132 over-writing existing variable &#39;accessToken&#39; with new value: signIpResponse.token
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;addToCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { id: &quot;#(id)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">227</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.1.call.0.14">13:23:27.139 request:
+1 &gt; POST http://api.fakeshop-api.com/carts/addToCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 11
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;12&quot;}
+
+13:23:27.363 response time in milliseconds: 224
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Etag: W/&quot;23-ePt5zWjLAu5+pSzcrd9zzERqTd8&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Product added to cart&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.1.call">
+    <div class="step-container" id="0.10.1.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Product added to cart&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.2.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[1]examples.fakeshop.createCart</div>
+      </div>
+      <div class="time-cell passed">518</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">293</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.2.call.0.5">13:23:27.668 &lt;&lt; lock released, cached callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.10.2.call">
+      <div class="step-container" id="0.10.2.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.logIn</div>
+      </div>
+      <div class="time-cell passed">278</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.2.call.0.5.0.call.0.4">13:23:27.375 over-writing existing variable &#39;signIpResponse&#39; with new value: callonce read(&#39;logIn.feature&#39;)
+13:23:27.377 &gt;&gt; lock acquired, begin callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10.2.call.0.5.0.call.0.8">{
+    &quot;email&quot;:&quot;da9marka@email.com&quot;,
+    &quot;password&quot;:&quot;Qaz12345&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">277</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.2.call.0.5.0.call.0.16">13:23:27.388 request:
+1 &gt; POST http://api.fakeshop-api.com/users/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Qaz12345&quot;,&quot;email&quot;:&quot;da9marka@email.com&quot;}
+
+13:23:27.663 response time in milliseconds: 275
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 224
+1 &lt; Etag: W/&quot;e0-G5ZBXTfQPBxrCj42a1fGfxnXOo0&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;User signed in successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.token == token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call.0.5.0.call">
+    <div class="step-container" id="0.10.2.call.0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.message == &quot;User signed in successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.2.call.0.6">13:23:27.668 over-writing existing variable &#39;accessToken&#39; with new value: signIpResponse.token
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;addToCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { id: &quot;#(id)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">224</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.2.call.0.14">13:23:27.671 request:
+1 &gt; POST http://api.fakeshop-api.com/carts/addToCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDcsImV4cCI6MTYyNjAwMjYwN30.axDEy22jV_F2Soz4RErJ6Z0wGpgEFcHRvd5VB9aLysA
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 11
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;13&quot;}
+
+13:23:27.892 response time in milliseconds: 220
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Etag: W/&quot;23-ePt5zWjLAu5+pSzcrd9zzERqTd8&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:27 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Product added to cart&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.2.call">
+    <div class="step-container" id="0.10.2.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Product added to cart&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.3.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[2]examples.fakeshop.createCart</div>
+      </div>
+      <div class="time-cell passed">546</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">305</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.3.call.0.5">13:23:28.204 &lt;&lt; lock released, cached callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.10.3.call">
+      <div class="step-container" id="0.10.3.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.logIn</div>
+      </div>
+      <div class="time-cell passed">293</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.3.call.0.5.0.call.0.4">13:23:27.900 over-writing existing variable &#39;signIpResponse&#39; with new value: callonce read(&#39;logIn.feature&#39;)
+13:23:27.903 &gt;&gt; lock acquired, begin callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10.3.call.0.5.0.call.0.8">{
+    &quot;email&quot;:&quot;da9marka@email.com&quot;,
+    &quot;password&quot;:&quot;Qaz12345&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">292</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.3.call.0.5.0.call.0.16">13:23:27.912 request:
+1 &gt; POST http://api.fakeshop-api.com/users/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Qaz12345&quot;,&quot;email&quot;:&quot;da9marka@email.com&quot;}
+
+13:23:28.201 response time in milliseconds: 289
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 224
+1 &lt; Etag: W/&quot;e0-hGE3OaNf2dJhtJfh+s2Qnr6YO0k&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;User signed in successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.token == token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call.0.5.0.call">
+    <div class="step-container" id="0.10.3.call.0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.message == &quot;User signed in successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.3.call.0.6">13:23:28.205 over-writing existing variable &#39;accessToken&#39; with new value: signIpResponse.token
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;addToCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { id: &quot;#(id)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">240</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.3.call.0.14">13:23:28.207 request:
+1 &gt; POST http://api.fakeshop-api.com/carts/addToCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 11
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;14&quot;}
+
+13:23:28.444 response time in milliseconds: 237
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Etag: W/&quot;23-ePt5zWjLAu5+pSzcrd9zzERqTd8&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Product added to cart&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.3.call">
+    <div class="step-container" id="0.10.3.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Product added to cart&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.10.4.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">[3]examples.fakeshop.createCart</div>
+      </div>
+      <div class="time-cell passed">574</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">301</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.4.call.0.5">13:23:28.753 &lt;&lt; lock released, cached callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row" data-parent="0.10.4.call">
+      <div class="step-container" id="0.10.4.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.logIn</div>
+      </div>
+      <div class="time-cell passed">292</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.4.call.0.5.0.call.0.4">13:23:28.452 over-writing existing variable &#39;signIpResponse&#39; with new value: callonce read(&#39;logIn.feature&#39;)
+13:23:28.454 &gt;&gt; lock acquired, begin callonce: read(&#39;logIn.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;, &#39;signin&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10.4.call.0.5.0.call.0.8">{
+    &quot;email&quot;:&quot;da9marka@email.com&quot;,
+    &quot;password&quot;:&quot;Qaz12345&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">291</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.4.call.0.5.0.call.0.16">13:23:28.461 request:
+1 &gt; POST http://api.fakeshop-api.com/users/signin
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Qaz12345&quot;,&quot;email&quot;:&quot;da9marka@email.com&quot;}
+
+13:23:28.750 response time in milliseconds: 289
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 224
+1 &lt; Etag: W/&quot;e0-hGE3OaNf2dJhtJfh+s2Qnr6YO0k&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:28 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;User signed in successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.token == token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call.0.5.0.call">
+    <div class="step-container" id="0.10.4.call.0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.message == &quot;User signed in successfully&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.4.call.0.6">13:23:28.753 over-writing existing variable &#39;accessToken&#39; with new value: signIpResponse.token
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;addToCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { id: &quot;#(id)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">272</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10.4.call.0.14">13:23:28.756 request:
+1 &gt; POST http://api.fakeshop-api.com/carts/addToCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDgsImV4cCI6MTYyNjAwMjYwOH0.TWI3TYtmgGP68RvUrgqtSJj_t7et5IShWCBtTLkrJbU
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 11
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:&quot;15&quot;}
+
+13:23:29.025 response time in milliseconds: 269
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 35
+1 &lt; Etag: W/&quot;23-ePt5zWjLAu5+pSzcrd9zzERqTd8&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Product added to cart&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.10.4.call">
+    <div class="step-container" id="0.10.4.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Product added to cart&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;getCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">240</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">13:23:29.039 request:
+1 &gt; GET http://api.fakeshop-api.com/carts/getCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:29.275 response time in milliseconds: 236
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1235
+1 &lt; Etag: W/&quot;4d3-rFLpMtHxvffiC/IbsiPxu00OjFw&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;cart&quot;:[{&quot;quantity&quot;:1,&quot;price&quot;:&quot;32&quot;,&quot;name&quot;:&quot;LeadsaiL Wireless Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)&quot;,&quot;id&quot;:&quot;12&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Leadsail&quot;},{&quot;quantity&quot;:1,&quot;price&quot;:&quot;29&quot;,&quot;name&quot;:&quot;Amazon Basics Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)&quot;,&quot;id&quot;:&quot;13&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Amazon&quot;},{&quot;quantity&quot;:1,&quot;price&quot;:&quot;23&quot;,&quot;name&quot;:&quot;Cimetech Wireless Keyboard Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)&quot;,&quot;id&quot;:&quot;14&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Cimetech&quot;},{&quot;quantity&quot;:1,&quot;price&quot;:&quot;26&quot;,&quot;name&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo&quot;,&quot;description&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite&quot;,&quot;id&quot;:&quot;15&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Logitech&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">13:23:29.277 [print] {
+  &quot;cart&quot;: [
+    {
+      &quot;quantity&quot;: 1,
+      &quot;price&quot;: &quot;32&quot;,
+      &quot;name&quot;: &quot;LeadsaiL Wireless Keyboard and Mouse Combo&quot;,
+      &quot;description&quot;: &quot;Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)&quot;,
+      &quot;id&quot;: &quot;12&quot;,
+      &quot;category&quot;: &quot;accessories&quot;,
+      &quot;brand&quot;: &quot;Leadsail&quot;
+    },
+    {
+      &quot;quantity&quot;: 1,
+      &quot;price&quot;: &quot;29&quot;,
+      &quot;name&quot;: &quot;Amazon Basics Keyboard and Mouse Combo&quot;,
+      &quot;description&quot;: &quot;Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)&quot;,
+      &quot;id&quot;: &quot;13&quot;,
+      &quot;category&quot;: &quot;accessories&quot;,
+      &quot;brand&quot;: &quot;Amazon&quot;
+    },
+    {
+      &quot;quantity&quot;: 1,
+      &quot;price&quot;: &quot;23&quot;,
+      &quot;name&quot;: &quot;Cimetech Wireless Keyboard Mouse Combo&quot;,
+      &quot;description&quot;: &quot;Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)&quot;,
+      &quot;id&quot;: &quot;14&quot;,
+      &quot;category&quot;: &quot;accessories&quot;,
+      &quot;brand&quot;: &quot;Cimetech&quot;
+    },
+    {
+      &quot;quantity&quot;: 1,
+      &quot;price&quot;: &quot;26&quot;,
+      &quot;name&quot;: &quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo&quot;,
+      &quot;description&quot;: &quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite&quot;,
+      &quot;id&quot;: &quot;15&quot;,
+      &quot;category&quot;: &quot;accessories&quot;,
+      &quot;brand&quot;: &quot;Logitech&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.cart contains deep accessoriesList</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:21]</span>
+                <span class="scenario-name">Delete cart</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>478</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:23:29.286 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = call read(&#39;products.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">243</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.products</div>
+      </div>
+      <div class="time-cell passed">235</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def categoryResponse = read(&#39;category.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def category = categoryResponse.category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7">13:23:29.299 [print] accessories 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;getAllProducts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">228</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.11">13:23:29.301 request:
+1 &gt; GET http://api.fakeshop-api.com/products/getAllProducts
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:29.527 response time in milliseconds: 225
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4222
+1 &lt; Etag: W/&quot;107e-cW5jxKG4QpYyY6OjXflEMM+idZ4&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;products&quot;:[{&quot;price&quot;:&quot;2969&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;description&quot;:&quot;Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019&quot;,&quot;id&quot;:&quot;1&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;1580&quot;,&quot;name&quot;:&quot;Dell XPS 13 (9310)&quot;,&quot;description&quot;:&quot;Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest&quot;,&quot;id&quot;:&quot;2&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;1079&quot;,&quot;name&quot;:&quot;Lenovo ThinkPad E15&quot;,&quot;description&quot;:&quot;OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop&quot;,&quot;id&quot;:&quot;3&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;999&quot;,&quot;name&quot;:&quot;Apple MacBook Air 13.3&quot;,&quot;description&quot;:&quot;Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)&quot;,&quot;id&quot;:&quot;4&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;2990&quot;,&quot;name&quot;:&quot;ASUS ZenBook Pro Duo UX581&quot;,&quot;description&quot;:&quot;ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T&quot;,&quot;id&quot;:&quot;5&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;599&quot;,&quot;name&quot;:&quot;ASUS VivoBook 15&quot;,&quot;description&quot;:&quot;ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray&quot;,&quot;id&quot;:&quot;6&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;729&quot;,&quot;name&quot;:&quot;Lenovo IdeaPad S340 15.6&quot;,&quot;description&quot;:&quot;2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories&quot;,&quot;id&quot;:&quot;7&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;898&quot;,&quot;name&quot;:&quot;Dell Inspiron 15 5502&quot;,&quot;description&quot;:&quot;Dell Inspiron 15 5502 Thin &amp; Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver&quot;,&quot;id&quot;:&quot;8&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;375&quot;,&quot;name&quot;:&quot;Lenovo G34w-10 34-Inch&quot;,&quot;description&quot;:&quot;Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black&quot;,&quot;id&quot;:&quot;9&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;380&quot;,&quot;name&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor&quot;,&quot;description&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI&quot;,&quot;id&quot;:&quot;10&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;245&quot;,&quot;name&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor&quot;,&quot;description&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities&quot;,&quot;id&quot;:&quot;11&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;32&quot;,&quot;name&quot;:&quot;LeadsaiL Wireless Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)&quot;,&quot;id&quot;:&quot;12&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Leadsail&quot;},{&quot;price&quot;:&quot;29&quot;,&quot;name&quot;:&quot;Amazon Basics Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)&quot;,&quot;id&quot;:&quot;13&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Amazon&quot;},{&quot;price&quot;:&quot;23&quot;,&quot;name&quot;:&quot;Cimetech Wireless Keyboard Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)&quot;,&quot;id&quot;:&quot;14&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Cimetech&quot;},{&quot;price&quot;:&quot;26&quot;,&quot;name&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo&quot;,&quot;description&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite&quot;,&quot;id&quot;:&quot;15&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Logitech&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessories = karate.jsonPath(response, &quot;$..products[?(@.category == &#39;&quot; + category + &quot;&#39;)]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.write(accessories, &#39;accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.14">13:23:29.533 write to file: target\accessories.json
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessoriesList = read(&#39;file:target/accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartCreator = read(&#39;createCart.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce cartCreator accessoriesList</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;emptyCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">13:23:29.539 request:
+1 &gt; POST http://api.fakeshop-api.com/carts/emptyCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:29.763 response time in milliseconds: 224
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 31
+1 &lt; Etag: W/&quot;1f-uVjpI6rHViLny/uTsG6jJSVb1Qo&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:29 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Cart is now empty&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Cart is now empty&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:29]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:29]</span>
+                <span class="scenario-name">Check if cart is empty</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>501</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:29]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:23:29.773 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def signIpResponse = callonce read(&#39;logIn.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = signIpResponse.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def products = call read(&#39;products.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">263</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.fakeshop.products</div>
+      </div>
+      <div class="time-cell passed">255</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def categoryResponse = read(&#39;category.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def category = categoryResponse.category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print category</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7">13:23:29.783 [print] accessories 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;, &#39;getAllProducts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">246</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.11">13:23:29.785 request:
+1 &gt; GET http://api.fakeshop-api.com/products/getAllProducts
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:30.029 response time in milliseconds: 243
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 4222
+1 &lt; Etag: W/&quot;107e-cW5jxKG4QpYyY6OjXflEMM+idZ4&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:30 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;products&quot;:[{&quot;price&quot;:&quot;2969&quot;,&quot;name&quot;:&quot;Apple MacBook Pro 16&quot;,&quot;description&quot;:&quot;Apple MacBook Pro 16 with Touch Bar, 9th-Gen 8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro 5300M 4GB, Space Gray, Late 2019&quot;,&quot;id&quot;:&quot;1&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;1580&quot;,&quot;name&quot;:&quot;Dell XPS 13 (9310)&quot;,&quot;description&quot;:&quot;Dell XPS 13 (9310), 13.4- inch FHD+ Touch Laptop - Intel Core i7-1185G7, 16GB 4267MHz LPDDR4x RAM, 512GB SSD, Iris Xe Graphics, Windows 10 Pro - Platinum Silver with Black Palmrest&quot;,&quot;id&quot;:&quot;2&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;1079&quot;,&quot;name&quot;:&quot;Lenovo ThinkPad E15&quot;,&quot;description&quot;:&quot;OEM Lenovo ThinkPad E15 Gen 2 15.6 FHD Display 1920x1080, Intel Quad Core i5-1135G7, 32GB RAM, 512GB NVMe, W10P, Business Laptop&quot;,&quot;id&quot;:&quot;3&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;999&quot;,&quot;name&quot;:&quot;Apple MacBook Air 13.3&quot;,&quot;description&quot;:&quot;Apple MacBook Air 13.3 with Retina Display, 1.1GHz Quad-Core Intel Core i5, 8GB Memory, 256GB SSD, Silver (Early 2020)&quot;,&quot;id&quot;:&quot;4&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Apple&quot;},{&quot;price&quot;:&quot;2990&quot;,&quot;name&quot;:&quot;ASUS ZenBook Pro Duo UX581&quot;,&quot;description&quot;:&quot;ASUS ZenBook Pro Duo UX581 Laptop, 15.6 4K UHD NanoEdge Touch Display, Intel Core i9-10980HK, 32GB RAM, 1TB PCIe SSD, GeForce RTX 2060, ScreenPad Plus, Windows 10 Pro, Celestial Blue, UX581LV-XS94T&quot;,&quot;id&quot;:&quot;5&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;599&quot;,&quot;name&quot;:&quot;ASUS VivoBook 15&quot;,&quot;description&quot;:&quot;ASUS VivoBook 15 Thin and Light Laptop- 15.6 Full HD, Intel i5-1035G1 CPU, 8GB RAM, 512GB SSD, Backlit KeyBoard, Fingerprint, Windows 10- F512JA-AS54, Slate Gray&quot;,&quot;id&quot;:&quot;6&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;729&quot;,&quot;name&quot;:&quot;Lenovo IdeaPad S340 15.6&quot;,&quot;description&quot;:&quot;2021 Lenovo IdeaPad S340 15.6 FHD Touchscreen Laptop, AMD Ryzen 7 3700U Processor, 12GB Memory, 512GB SSD, Backlit Keyboard, HDMI, AMD Radeon Vega 10, Windows 10 S, Abyss Blue, W\/ IFT Accessories&quot;,&quot;id&quot;:&quot;7&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;898&quot;,&quot;name&quot;:&quot;Dell Inspiron 15 5502&quot;,&quot;description&quot;:&quot;Dell Inspiron 15 5502 Thin &amp; Light Laptop, 15.6 inch FHD - Intel Core i7-1165G7, 8GB 3200MHz DDR4 RAM, 512GB SSD, NVIDIA GeForce MX330 2GB GDDR5, Windows 10 Home - Platinum Silver&quot;,&quot;id&quot;:&quot;8&quot;,&quot;category&quot;:&quot;laptop&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;375&quot;,&quot;name&quot;:&quot;Lenovo G34w-10 34-Inch&quot;,&quot;description&quot;:&quot;Lenovo G34w-10 34-Inch WQHD Curved Gaming Monitor, 21:9 Ultra-Wide, 3 Side NearEdgeless, 3440 x 1440, AMD FreeSync, 144Hz, HDMI, DP, Adjustable Stand, VESA, 66A1GCCBUS, Black&quot;,&quot;id&quot;:&quot;9&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Lenovo&quot;},{&quot;price&quot;:&quot;380&quot;,&quot;name&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor&quot;,&quot;description&quot;:&quot;ASUS TUF Gaming 32 2K HDR Curved Monitor (VG32VQ1B) - WQHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI&quot;,&quot;id&quot;:&quot;10&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Asus&quot;},{&quot;price&quot;:&quot;245&quot;,&quot;name&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor&quot;,&quot;description&quot;:&quot;Dell UltraSharp 24-inch FHD Monitor - U2419HX. Full HD 1920 x 1080, 60 Hz. Tilt, swivel, pivot and vertical extension adjustment capabilities&quot;,&quot;id&quot;:&quot;11&quot;,&quot;category&quot;:&quot;monitor&quot;,&quot;brand&quot;:&quot;Dell&quot;},{&quot;price&quot;:&quot;32&quot;,&quot;name&quot;:&quot;LeadsaiL Wireless Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard and Mouse Combo, LeadsaiL Compact Quiet Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook, Laptop (Black+Grey)&quot;,&quot;id&quot;:&quot;12&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Leadsail&quot;},{&quot;price&quot;:&quot;29&quot;,&quot;name&quot;:&quot;Amazon Basics Keyboard and Mouse Combo&quot;,&quot;description&quot;:&quot;Amazon Basics Wireless Computer Keyboard and Mouse Combo - Quiet and Compact - US Layout (QWERTY)&quot;,&quot;id&quot;:&quot;13&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Amazon&quot;},{&quot;price&quot;:&quot;23&quot;,&quot;name&quot;:&quot;Cimetech Wireless Keyboard Mouse Combo&quot;,&quot;description&quot;:&quot;Wireless Keyboard Mouse Combo, Cimetech Compact Full Size Wireless Keyboard and Mouse Set 2.4G Ultra-Thin Sleek Design for Windows, Computer, Desktop, PC, Notebook - (Wine red)&quot;,&quot;id&quot;:&quot;14&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Cimetech&quot;},{&quot;price&quot;:&quot;26&quot;,&quot;name&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo&quot;,&quot;description&quot;:&quot;Logitech MK295 Wireless Mouse &amp; Keyboard Combo with SilentTouch Technology, Full Numpad, Advanced Optical Tracking, Lag-Free Wireless, 90% Less Noise - Graphite&quot;,&quot;id&quot;:&quot;15&quot;,&quot;category&quot;:&quot;accessories&quot;,&quot;brand&quot;:&quot;Logitech&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessories = karate.jsonPath(response, &quot;$..products[?(@.category == &#39;&quot; + category + &quot;&#39;)]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.write(accessories, &#39;accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.14">13:23:30.036 write to file: target\accessories.json
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessoriesList = read(&#39;file:target/accessories.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def cartCreator = read(&#39;createCart.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:29]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = callonce cartCreator accessoriesList</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;carts&#39;, &#39;getCart&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">229</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">13:23:30.046 request:
+1 &gt; GET http://api.fakeshop-api.com/carts/getCart
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJkYTltYXJrYUBlbWFpbC5jb20iLCJpYXQiOjE2MjU4Mjk4MDYsImV4cCI6MTYyNjAwMjYwNn0.24mMZJ9EfX_jdFBemq6rAlgAW9yBDGnQ3B3tAKZsxV0
+1 &gt; Host: api.fakeshop-api.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:23:30.272 response time in milliseconds: 225
+1 &lt; 201
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 27
+1 &lt; Etag: W/&quot;1b-o3MnawzYxpn9m9OqDfmxZIGYquw&quot;
+1 &lt; Date: Fri, 09 Jul 2021 11:23:30 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;:&quot;Cart is empty&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.message == &#39;Cart is empty&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

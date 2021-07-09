@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KarateCert/KarateCert.iml" filepath="$PROJECT_DIR$/KarateCert/KarateCert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/karateCertyfikat.iml" filepath="$PROJECT_DIR$/.idea/karateCertyfikat.iml" />
+    </modules>
+  </component>
+</project>
